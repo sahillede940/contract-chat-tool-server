@@ -109,7 +109,6 @@ async def chat_contract(request: ChatContractRequest):
         response = llm.invoke(messages)
         return {
             "message": response.content,
-            "prompts" : messages
         }
     except Exception as e:
         return f"Error: {str(e)}"
