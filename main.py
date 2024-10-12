@@ -50,7 +50,7 @@ def generate_questions_from_contract(pdf_text: str) -> str:
 
     # Define the prompt for generating questions
     system_prompt = """
-    You are analyzing a contract for a logistics or delivery company. Read the following contract and generate relevant questions to clarify important terms and conditions. Also, provide potential answers based on the contract's content. The output must be in JSON format, where the questions and answers are represented as an array of objects. Each object should have two fields: "question" and "answer". Here's an example of the expected output format:
+    You are analyzing a contract for a logistics or delivery company. Read the following contract and generate 100 relevant questions to clarify important terms and conditions. Also, provide potential answers based on the contract's content. The output must be in JSON format, where the questions and answers are represented as an array of objects. Each object should have two fields: "question" and "answer". Here's an example of the expected output format:
 
     1. Please ensure that the output follows this strict JSON format.
     Output Format:
